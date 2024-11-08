@@ -39,7 +39,7 @@ def csv_upload_view(request):
                     # Clean up the uploaded file
                     fs.delete(file_path)
 
-    return render(request, 'csv_reflector/upload.html', {
+    return render(request, 'csv_reflector/index.html', {
         'form': form,
         'table_html': table_html,
         'error': error,
